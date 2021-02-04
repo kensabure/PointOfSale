@@ -20,7 +20,6 @@ import java.util.List;
 
 public class FavouritesFragment extends Fragment {
 
-    private RecyclerView recyclerView;
     //adapter
 
     //database Ref
@@ -41,7 +40,7 @@ public class FavouritesFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate( R.layout.fragment_favourites, container, false );
         this.getActivity().getWindow().setSoftInputMode( WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN );
-        recyclerView = view.findViewById( R.id.recyclerView );
+
 
 
         return view;

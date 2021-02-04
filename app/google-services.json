@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "139906284585",
+    "firebase_url": "https://emob-c34e7-default-rtdb.firebaseio.com",
+    "project_id": "emob-c34e7",
+    "storage_bucket": "emob-c34e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139906284585:android:f9fc369521039a4a1b3038",
+        "android_client_info": {
+          "package_name": "com.msdevelopers.e_ordering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139906284585-07kdk8aldip4cu6rtugld1p05dbn0lmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJCgSHUTErKR94azhc8tOXlMX4MEa9-uc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139906284585-07kdk8aldip4cu6rtugld1p05dbn0lmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139906284585:android:81f0fe1aff0ca51d1b3038",
+        "android_client_info": {
+          "package_name": "com.msdevelopers.e_ticketing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139906284585-07kdk8aldip4cu6rtugld1p05dbn0lmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJCgSHUTErKR94azhc8tOXlMX4MEa9-uc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139906284585-07kdk8aldip4cu6rtugld1p05dbn0lmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139906284585:android:073bc937dfb6c9501b3038",
+        "android_client_info": {
+          "package_name": "com.msdevelopers.salepointapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139906284585-07kdk8aldip4cu6rtugld1p05dbn0lmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJCgSHUTErKR94azhc8tOXlMX4MEa9-uc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139906284585-07kdk8aldip4cu6rtugld1p05dbn0lmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

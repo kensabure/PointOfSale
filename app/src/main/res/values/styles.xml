@@ -1,0 +1,175 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorPrimaryDark</item>
+            <item name="android:textColor">@color/colorWhite</item>
+            <item name="popupMenuBackground">@color/colorPrimary</item>
+        </style>
+
+
+        <!-- Activity with no Title -->
+        <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+        <style name="FullscreenDialogTheme" parent="Theme.MaterialComponents.Light.DialogWhenLarge">
+            <item name="android:statusBarColor" tools:targetApi="lollipop">#288659</item>
+            <item name="windowActionBar">true</item>
+            <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
+        </style>
+
+        <!-- Dark Buttons -->
+        <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Light">
+            <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/whiteCardColor</item>
+            <item name="android:layout_marginRight">4dp</item>
+            <item name="android:layout_marginLeft">4dp</item>
+            <item name="android:textColor">@android:color/white</item>
+        </style>
+
+        <!-- Light EditTexts -->
+        <style name="ThemeOverlay.MyLightEditText" parent="ThemeOverlay.MaterialComponents.Dark" />
+        <style name="ThemeOverlay.MyTextDetail" parent="AppTheme">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:fadeScrollbars">true</item>
+            <item name="android:gravity">center</item>
+            <item name="android:maxLines">5</item>
+            <item name="android:padding">4dp</item>
+            <item name="android:scrollbars">vertical</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+
+        <style name="ThemeOverlay.FirebaseIcon" parent="AppTheme">
+            <item name="android:layout_marginTop">@dimen/icon_top_margin</item>
+            <item name="android:layout_marginBottom">@dimen/icon_bottom_margin</item>
+        </style>
+
+        <style name="ThemeOverlay.MyTitleText" parent="AppTheme">
+            <item name="android:gravity">center</item>
+            <item name="android:textSize">36sp</item>
+        </style>
+
+
+        <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+
+        <!-- Base application theme. -->
+
+
+        <style name="parent">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+        <style name="viewParent">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+        <style name="df_dialog_layout">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:orientation">vertical</item>
+            <item name="android:gravity">center</item>
+            <item name="android:layout_gravity">center</item>
+            <item name="android:padding">10dp</item>
+        </style>
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+        <style name="ToolbarColoredBackArrow" parent="AppTheme">
+            <item name="android:textColorTertiary">@color/colorPrimaryDark</item>
+        </style>
+
+        <style name="df_dialog">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:windowBackground">@color/df_transparent_black_background</item>
+            <item name="android:windowIsFloating">false</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:layout_centerInParent">true</item>
+        </style>
+
+        <style name="homeHeading" parent="viewParent">
+            <item name="android:textSize">@dimen/headerTextSize</item>
+            <item name="android:textColor">@color/blackTextColor</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="learnhubTitleText" parent="parent">
+            <item name="android:textSize">@dimen/contentTextSize</item>
+            <item name="android:textColor">@color/blackTextColor</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+
+    <style name="AllStyles">
+        <item name="stStrokeWidth">2dp</item>
+        <item name="stStrokeColor">#00FFFF</item>
+        <item name="stColorBackground">#000</item>
+        <item name="stRadius">12dp</item>
+        <item name="stTextSize">18sp</item>
+        <item name="stTextColor">#ff0</item>
+        <item name="stTextBold">true</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stIconStart">@drawable/ic_autorenew_white_24dp</item>
+        <item name="stIconEnd">@drawable/ic_autorenew_white_24dp</item>
+        <item name="stLength">SHORT</item>
+    </style>
+
+
+    <style name="BaseStyleableToast">
+        <item name="stLength">SHORT</item>
+    </style>
+
+    <style name="ColoredStroke" parent="BaseStyleableToast">
+        <item name="stStrokeWidth">2dp</item>
+        <item name="stStrokeColor">#ff00</item>
+    </style>
+
+    <style name="ColoredBackground" parent="BaseStyleableToast">
+        <item name="stColorBackground">@color/background</item>
+    </style>
+
+    <style name="ColoredText" parent="BaseStyleableToast">
+        <item name="stTextColor">#EFEBEB</item>
+        <item name="stColorBackground">#B71C1C</item>
+    </style>
+
+    <style name="ColoredBoldText" parent="BaseStyleableToast">
+        <item name="stTextColor">#FF5A5F</item>
+        <item name="stTextBold">true</item>
+
+    </style>
+
+    <style name="CustomFont" parent="BaseStyleableToast"></style>
+
+    <style name="CornerRadius5Dp" parent="BaseStyleableToast">
+        <item name="stRadius">5dp</item>
+    </style>
+
+    <style name="IconStart" parent="BaseStyleableToast">
+        <item name="stIconStart">@drawable/ic_autorenew_white_24dp</item>
+    </style>
+
+    <style name="IconEnd" parent="BaseStyleableToast">
+        <item name="stIconEnd">@drawable/ic_autorenew_white_24dp</item>
+    </style>
+
+    <style name="IconStartEnd" parent="BaseStyleableToast">
+        <item name="stIconStart">@drawable/ic_autorenew_white_24dp</item>
+        <item name="stIconEnd">@drawable/ic_autorenew_white_24dp</item>
+    </style>
+
+</resources>

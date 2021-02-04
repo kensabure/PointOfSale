@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rippleEffectColor">#f816a463</color>
+    <color name="btnSignIn">#1fbad6</color>
+    <color name="btnRegister">#83838c</color>
+    <color name="baseReleaseColor">#212121</color>
+    <color name="basePressColor">#FAFAFA</color>
+    <color name="ballReleaseColor">#9E9E9E</color>
+
+    <color name="green">#43A047</color>
+    <color name="orange">#ff5500</color>
+    <color name="red">#EF0505</color>
+    <color name="blue">#060680</color>
+    <color name="lightorange">#C8C6C2</color>
+    <color name="lightorangedark">#999999</color>
+    <color name="cream">#fdf2df</color>
+
+    <color name="colorPrimary">#006064</color>
+    <color name="colorPrimaryDark">#033C33</color>
+    <color name="colorAccent">#FFFF</color>
+    <color name="colorText">#000111</color>
+
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorGrey">#c3c3c3 </color>
+    <color name="background">#65828e</color>
+    <color name="main_color">#ff9a00</color>
+    <color name="secondary_color">#BDBDBD</color>
+    <color name="overlay_color">#55333639</color>
+    <color name="df_transparent_black_background">#80000000</color>
+    <color name="whiteCardColor">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
+
+    <color name="selected_dot">#2D9CDB</color>
+    <color name="idle_dot">#662D9CDB</color>
+    <color name="ob_header">#4A4A4A</color>
+    <color name="ob_desc">#4A4A4A</color>
+</resources>

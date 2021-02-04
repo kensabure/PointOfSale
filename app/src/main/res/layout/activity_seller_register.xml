@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SellerRegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rel_key"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="10dp"
+                android:background="@drawable/shape_rec01">
+                <ImageButton
+                    android:visibility="gone"
+                    android:id="@+id/seller_gps"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:layout_alignParentRight="true"/>
+                <ImageView
+                    android:id="@+id/reg_log"
+                    android:onClick="Back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Vendor Sign Up"
+                    android:textSize="20sp"
+                    android:textColor="@color/whiteCardColor"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/key"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                android:background="@drawable/shape_circle01"
+                android:padding="2dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/rel_key"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardMaxElevation="4dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_margin="2dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="16dp"
+                            android:layout_marginBottom="20sp"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/seller_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                app:startIconDrawable="@drawable/user32_blue"
+                                app:startIconTint="@color/colorPrimary"
+                                android:hint="Full Name"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:errorEnabled="true">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:inputType="text" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/shop_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center_horizontal"
+                                    app:startIconDrawable="@drawable/ic_shop_black_24dp"
+                                    app:startIconTint="@color/colorPrimary"
+                                    android:hint="Shop Name"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    app:errorEnabled="true">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:inputType="text" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/delivery_fee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                app:startIconDrawable="@drawable/ic_monetization_on_black_24dp"
+                                app:startIconTint="@color/colorPrimary"
+                                android:hint="Delivery Fee (Optional)"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:errorEnabled="true">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:inputType="text" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/seller_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                app:startIconDrawable="@drawable/ic_phone_black_24dp"
+                                app:hintTextColor="@color/blue"
+                                android:hint="Phone No."
+                                app:startIconTint="@color/colorPrimary"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:errorEnabled="true">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:inputType="number" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="5"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Country"
+                                        android:textColor="@color/blackTextColor"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textSize="16sp"
+                                        android:padding="10dp"
+                                        />
+
+                                    <EditText
+                                        android:id="@+id/country"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:background="@null"
+                                        android:layout_gravity="center_horizontal"
+                                        android:inputType="textCapWords"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Area"
+                                        android:textColor="@color/blackTextColor"
+                                        android:layout_gravity="center_horizontal"
+                                        android:textSize="16sp"
+                                        android:padding="10dp"
+                                        />
+
+
+                                    <EditText
+                                        android:id="@+id/area"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:background="@null"
+                                        android:layout_gravity="center_horizontal"
+                                        android:inputType="textCapWords"/>
+
+                                </LinearLayout>
+
+                                <ImageButton
+                                    android:id="@+id/gps"
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@null"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/ic_place"
+                                    android:onClick="getUserLoc"
+                                    android:layout_alignParentRight="true"/>
+                            </LinearLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/seller_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                app:hintTextColor="@color/blue"
+                                app:startIconDrawable="@drawable/ic_email_black_24dp"
+                                android:hint="Email Adresss"
+                                android:transitionName="email_tran"
+                                app:startIconTint="@color/colorPrimary"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:errorEnabled="true">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:inputType="textEmailAddress" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/seller_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                app:startIconDrawable="@drawable/ic_lock_outline_black_24dp"
+                                app:hintTextColor="@color/blue"
+                                android:hint="Password"
+                                android:transitionName="password_tran"
+                                app:startIconTint="@color/colorPrimary"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:errorEnabled="true"
+                                app:passwordToggleEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:inputType="textPassword" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:weightSum="4">
+
+                                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.rey.material.widget.FloatingActionButton
+                                        android:id="@+id/register_seller"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        app:backgroundTint="@color/whiteCardColor"
+                                        app:fab_backgroundColor="@color/colorPrimaryDark"
+                                        app:fab_iconSrc="@drawable/ic_arrow_forward_black_24dp" />
+                                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

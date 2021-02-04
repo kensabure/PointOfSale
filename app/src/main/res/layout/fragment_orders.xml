@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.OrdersFragment">
+
+    <RelativeLayout
+        android:id="@+id/ordersRel"
+        android:layout_below="@+id/toolBarRel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/searchOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:cursorVisible ="false"
+            android:layout_toStartOf="@+id/filterOrders"
+            android:text="Showing All Orders"/>
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/filterOrders"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_baseline_filter_list_24"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/OrderRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/filterOrders"
+            app:reverseLayout="true"
+            app:stackFromEnd="true"
+            tools:listitem="@layout/row_order_seller"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

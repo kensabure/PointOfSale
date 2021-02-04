@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_admin_add"
+        android:iconTint="@color/lightorangedark"
+        android:title="Add Admin" />
+    <item
+        android:id="@+id/change_password"
+        android:iconTint="@color/lightorangedark"
+        android:title="Change Password" />
+</menu>

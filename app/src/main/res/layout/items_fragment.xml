@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_design"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:drawableRight="@drawable/ic_search_black_24dp"
+                android:background="@drawable/input_design"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Search Text..." />
+        </LinearLayout>
+
+    <EditText
+        android:visibility="gone"
+        android:layout_below="@+id/search_edit_text"
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="    Search.."
+        android:layout_marginLeft="10dp"
+        android:layout_margin="5dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerShop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_product_waiter"/>
+    </LinearLayout>
+</RelativeLayout>

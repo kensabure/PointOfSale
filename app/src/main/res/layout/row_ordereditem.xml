@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/grey_300">
+
+    <TextView
+        android:id="@+id/ItemTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackTextColor"
+        android:textStyle="bold"
+        android:text="Title:" />
+
+    <TextView
+        android:id="@+id/ItemPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackTextColor"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/ItemTitleTv"
+        android:text="20" />
+    <LinearLayout
+        android:layout_below="@+id/ItemTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/itemPriceEachTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackTextColor"
+            android:textStyle="bold"
+            android:text="10" />
+        <TextView
+            android:id="@+id/ItemQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackTextColor"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/ItemTitleTv"
+            android:text="[2]"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
